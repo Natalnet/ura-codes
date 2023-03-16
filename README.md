@@ -1,5 +1,7 @@
 # Um robô por aluno
 
+![1](https://github.com/Natalnet/ura-codes/blob/master/imagens/ura.png)
+
 Ter um robô. Um sonho que está próximo de se tornar realidade para alunos de todo o Brasil. De baixíssimo custo, a estrutura será montada pelos próprios estudantes, que poderão usar o dispositivo para auxiliá-los no estudo de outras disciplinas curriculares. A iniciativa é dos pesquisadores do Laboratório Natalnet da Universidade Federal do Rio Grande do Norte (UFRN), que têm o objetivo de utilizar a robótica educacional para difundir o interesse por tecnologia em todos os níveis de ensino no País.
 
 A presente proposta tem como objetivo desenvolver uma ação integrada que contemple o ensino, pesquisa e principalmente a extensão da "Robótica Educacional de Baixo Custo" integrado à educação pública. Diante desta ação, articularemos alunos universitários, do ensino médio e professores de escolas públicas com o objetivo de difundir a robótica educacional no País.
