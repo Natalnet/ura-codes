@@ -46,11 +46,11 @@ Este repositório abrigará todos os códigos referentes ao projeto de extensão
 
 ## Referências e links
 
-* Página do links do URA
+#### Página do links do URA
 
 * [Acesse aqui](https://ura.ect.ufrn.br)
 
-* Usando linux pelos terminais da ECT/UFRN
+#### Usando linux pelos terminais da ECT/UFRN
 
 * [Acesse aqui](https://github.com/orivaldosantana/GPRo/tree/master/arduino)
 
