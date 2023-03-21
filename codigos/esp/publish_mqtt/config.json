@@ -1,0 +1,8 @@
+{
+    "ssid": "<name>",
+    "ssid_password": "<password>",
+    "mqtt_address": "000.000.000.000",
+    "mqtt_port": 1883,
+    "mqtt_user": "<user>",
+    "mqtt_password": "<password>"
+}
