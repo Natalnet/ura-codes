@@ -22,7 +22,7 @@ def restart_and_reconnect():
 
     machine.reset()
 
-def publishMessage(topic, message):
+def publishMessage(topic, message): # Método para publicarmos uma mensagem no MQTT
     client.publish(topic, message)
 
 try:
@@ -32,5 +32,5 @@ except OSError as e:
 
 while True:
 
-    if (time.time() - lastMsg) >= msgDelay:
-        publishMessage('teste', b'Hello world')
+    if (time.time() - lastMsg) >= msgDelay: # Enviando a cada 5s uma mensagem para o tópico escolhido
+        publishMessage(b'teste', 'Hello world') # Específicamos o nosso tópico em b'<string>' aqui e enviamos a mensagem
