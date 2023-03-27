@@ -34,7 +34,7 @@ Este repositório abrigará todos os códigos referentes ao projeto de extensão
 
 ## Códigos do URA (C++ ARDUINO)
 
-* Em breve...
+* [Acesse aqui](https://github.com/Natalnet/ura-codes/tree/master/codigos/arduino)
 
 ## Códigos do URA (C++ ESP32)
 
@@ -53,6 +53,14 @@ Este repositório abrigará todos os códigos referentes ao projeto de extensão
 #### Usando linux pelos terminais da ECT/UFRN
 
 * [Acesse aqui](https://github.com/orivaldosantana/GPRo/tree/master/arduino)
+
+#### Documentação Arduino UNO R3
+
+* [Acesse aqui](https://docs.arduino.cc/hardware/uno-rev3)
+
+### Documentação Espressif ESP 32
+
+* [Acesse aqui](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
 
 ## Tutoriais de Arduino e ESP32
 
