@@ -58,7 +58,7 @@ Este repositório abrigará todos os códigos referentes ao projeto de extensão
 
 * [Acesse aqui](https://docs.arduino.cc/hardware/uno-rev3)
 
-### Documentação Espressif ESP 32
+#### Documentação Espressif ESP 32
 
 * [Acesse aqui](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
 
