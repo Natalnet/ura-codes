@@ -1,6 +1,6 @@
 from machine import Pin, ADC
 
-import time, neopixel
+import time, neopixel, ujson
 
 # Variáveis
 
@@ -35,6 +35,10 @@ red_vals = []
 green_vals = []
 blue_vals = []
 
+# Json
+
+config = open('config.json', 'r').read()
+
 while True:
     
     ldr_val = ldr.read()
@@ -45,15 +49,15 @@ while True:
         
         np.fill(WHITE)
         np.write()
+
+        arq = open('config.json').read()
+        load = ujson.loads(arq)
+        data = {"colorName":"BRANCO", "readValue": ldr_val}
         
-        if (ldr_val > 3480 and ldr_val < 3600):
-            print('Cor vermelha')
-            red_vals.append(ldr_val)
-        elif (ldr_val > 3100 and ldr_val < 3200):
-            print('Cor verde')
-            green_vals.append(ldr_val)
-        elif (ldr_val > 3000 and ldr_val < 3099):
-            print('Cor azul')
-            blue_vals.append(ldr_val)
+        load.append(data)
+
+        arq = open('config.json', 'w')
+        arq.write(ujson.dumps(load))
+        arq.close()
             
         lastRead = time.time()
