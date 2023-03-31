@@ -35,10 +35,6 @@ red_vals = []
 green_vals = []
 blue_vals = []
 
-# Json
-
-config = open('config.json', 'r').read()
-
 while True:
     
     ldr_val = ldr.read()
@@ -51,7 +47,9 @@ while True:
         np.write()
 
         arq = open('config.json').read()
+
         load = ujson.loads(arq)
+
         data = {"colorName":"BRANCO", "readValue": ldr_val}
         
         load.append(data)
