@@ -46,25 +46,31 @@ Este repositório abrigará todos os códigos referentes ao projeto de extensão
 
 ## Referências e links
 
-#### Página do links do URA
+##### Página do links do URA
 
 * [Acesse aqui](https://ura.ect.ufrn.br)
 
-#### Usando linux pelos terminais da ECT/UFRN
+##### Usando linux pelos terminais da ECT/UFRN
 
 * [Acesse aqui](https://github.com/orivaldosantana/GPRo/tree/master/arduino)
 
-#### Documentação Arduino UNO R3
+##### BIPES Web IDE
+
+* [Acesse aqui](http://bipes.net.br/ide/)
+
+##### Documentação Arduino UNO R3
 
 * [Acesse aqui](https://docs.arduino.cc/hardware/uno-rev3)
 
-#### Documentação Espressif ESP 32
+##### Documentação Espressif ESP 32
 
 * [Acesse aqui](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
 
 ## Tutoriais de Arduino e ESP32
 
-* Em breve...
+##### Flashando o ESP-32 e ligando o led interno
+
+* [Acesse aqui](https://www.youtube.com/watch?v=uL_kh7kD6Qc)
 
 
 
