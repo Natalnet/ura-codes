@@ -27,13 +27,15 @@ Antes de começarmos a programar devemos acessar o site do BIPES. [Acesse aqui](
 
 * Aperte no botão de conexão, semelhante ao ícone do WiFi
 
-![1](https://github.com/Natalnet/ura-codes)
+![1](https://github.com/Natalnet/ura-codes/blob/master/imagens/bipes_header.png)
+
+##### Escolha a placa "ESP-32" após a configuração do ambiente de desenvolvimento.
 
 * Escolha o método padrão de conexão
 
 ![2](https://github.com/Natalnet/ura-codes/blob/master/imagens/bipes_cfg.png)
 
-##### Nesta opção, vamos escolher o método usando conexão remota através do IP gerado pelo ESP-32 (exemplo: "ws://192.168.4.1:8266/")
+##### Nesta opção, vamos escolher o método usando conexão remota através do IP gerado pelo ESP-32 (exemplo: "ws://192.168.4.1:8266/").
 
 ## Código do LED feito no BIPES
 
