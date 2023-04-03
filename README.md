@@ -32,6 +32,38 @@ Este repositório abrigará todos os códigos referentes ao projeto de extensão
 
 * [Versão 9.0](https://github.com/luissssmartins/L9110URA)
 
+## Usando o BIPES
+
+### Pré-requisitos
+
+##### Antes de todo o processo, acesse o tutorial para instalação do firmware [Acesse aqui](https://github.com/Natalnet/ura-codes#flashando-o-esp-32-e-ligando-o-led-interno)
+
+* Download do firmware MicroPython v1.19.1 [Baixe aqui](https://micropython.org/resources/firmware/esp32-20220618-v1.19.1.bin)
+
+* Configurando o ESP-32 com o acesso remoto [Acesse aqui](https://learn.adafruit.com/micropython-basics-esp8266-webrepl/access-webrepl)
+
+### Acessando o BIPES
+
+Antes de começar a acessar e programar, acesse o site do BIPES [Acesse aqui](http://bipes.net.br/ide/)
+
+* Aperte no botão de conexão, semelhante ao ícone de WiFi
+
+![2](https://github.com/Natalnet/ura-codes/blob/master/imagens/bipes_header.png)
+
+##### Escolha a placa "ESP-32" após a configuração do ambiente de desenvolvimento.
+
+* Escolha o método padrão de conexão
+
+![3](https://github.com/Natalnet/ura-codes/blob/master/imagens/bipes_cfg.png)
+
+##### Nesta opção, vamos escolher o método "Network", usando a conexão remota através do IP gerado pelo ESP-32 após a programação. (exemplo: "ws://10.6.1.12:8266/")
+
+* Executando códigos produzidos pelo BIPES
+
+Depois de produzido seu código, basta executar assim como a foto abaixo
+
+![4](https://github.com/Natalnet/ura-codes/blob/master/imagens/bipes_exec.png)
+
 ## Códigos do URA (C++ ARDUINO)
 
 * [Acesse aqui](https://github.com/Natalnet/ura-codes/tree/master/codigos/arduino)
