@@ -1,4 +1,4 @@
-# Controle do led interno usando BIPES e WEB Repl
+# Controlando o LDR usando o BIPES e Web Repl
 
 Esse projeto contém os códigos necessários e passo a passo para o controle do led interno do ESP-32 de forma remota.
 
@@ -17,11 +17,11 @@ Para que o sistema remoto esteja disponível, é necessário que seu ESP-32 este
 }
 ```
 
-## Código do LED feito no BIPES
+## Código do LDR feito no BIPES
 
 Com o ESP-32 configurado, este é código produzido e que deve ser executado no BIPES
 
-![1](https://github.com/Natalnet/ura-codes/blob/master/imagens/bipes_code_gpio2.png)
+![1](https://github.com/Natalnet/ura-codes/blob/master/imagens/bipes_code_ldr.png)
 
 
 
