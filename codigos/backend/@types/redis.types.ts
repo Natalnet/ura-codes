@@ -4,9 +4,8 @@ export interface RedisInterface {
 
     initialize(): Promise<void>;
 
-    getPool(): Promise<redisPool.RedisConnectionPool>;
+    destroy(): Promise<void>;
 
-    add(key: string, field: string, data: any): Promise<any>;
     remove(key: string): Promise<any>;
 
     setCache(key: string, value: string, time: number): Promise<any>;
