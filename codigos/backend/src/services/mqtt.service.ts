@@ -1,4 +1,5 @@
 import { MqttInterface } from "../@types/mqtt.types";
+import client from 'paho-mqtt'
 import * as mqtt from 'paho-mqtt'
 import { enviroment } from "../constants/enviroment";
 
@@ -6,22 +7,30 @@ class MqttService implements MqttInterface {
 
     async initialize(): Promise<void> {
 
-        const {HOSTNAME, PORT} = enviroment.MQTT;
+        if (global.mqttv5) {
+            return;
+        }
 
-        const client = await new mqtt.Client(HOSTNAME, PORT, "mqtt-ura", {
+        const {HOSTNAME, PORT, CLIENT_ID} = enviroment.MQTT;
 
-            keepalive: 60,
-            clean: true,
-            reconnectPeriod: 1000,
+        const client = await new mqtt.Client(HOSTNAME, Number(PORT), CLIENT_ID);
 
-        });
+        await client.connect({onSucess:console.log(`Conectado ao MQTT de IP ${HOSTNAME} na porta ${PORT}`)});
+    }
 
-        client.connect({onSucess:console.log(`Conectado ao MQTT de IP ${HOSTNAME} 
-        na porta ${PORT}`)})
+    async getClient(): Promise<MqttInterface> {
+        return global.mqttv5
     }
 
 
-    callback(): Promise<void> {
+    async callback(payload: string): Promise<void> {
+        return console.log(payload);
+    }
+
+    async onmessagearrived(message: string): Promise<any> {
+        
+    }
+    onconnectionlost(response: string): Promise<any> {
         throw new Error("Method not implemented.");
     }
     
