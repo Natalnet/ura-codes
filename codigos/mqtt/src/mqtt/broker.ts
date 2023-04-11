@@ -1,5 +1,4 @@
 import mosca from 'mosca'
-import dotenv from 'dotenv'
 
 const mqttPort = process.env.MQTT_PORT;
 
