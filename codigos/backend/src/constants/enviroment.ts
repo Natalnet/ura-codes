@@ -1,4 +1,4 @@
-import dotenv from 'dotenv'
+import * as dotenv from 'dotenv'
 
 dotenv.config();
 
@@ -15,5 +15,5 @@ export const enviroment = {
     REDIS: {
         
         URL: process.env.REDIS_URL || "redis://redis-management:6379",
-    }
+    },
 }
