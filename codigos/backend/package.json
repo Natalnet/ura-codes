@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
+    "paho-mqtt": "^1.1.0",
     "redis-connection-pool": "^4.0.1",
-    "restify": "^11.1.0"
+    "restify": "^11.1.0",
+    "ws": "^8.13.0"
   }
 }

@@ -16,4 +16,10 @@ export const enviroment = {
         
         URL: process.env.REDIS_URL || "redis://redis-management:6379",
     },
+
+    MQTT: {
+        
+        HOSTNAME: process.env.MQTT_HOSTNAME || "10.6.1.42",
+        PORT: process.env.MQTT_PORT || 1884
+    }
 }
