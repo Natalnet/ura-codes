@@ -11,10 +11,12 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.15.11",
+    "@types/restify": "^8.5.6",
     "babel-preset-es2015": "^6.24.1"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "redis-connection-pool": "^4.0.1"
+    "redis-connection-pool": "^4.0.1",
+    "restify": "^11.1.0"
   }
 }
