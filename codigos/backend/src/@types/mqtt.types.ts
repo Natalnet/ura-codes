@@ -4,5 +4,11 @@ export interface MqttInterface {
 
     initialize(): Promise<void>;
 
-    callback(): Promise<void>;
+    getClient(): Promise<mqttv5.Client>;
+
+    callback(payload: string): Promise<void>;
+
+    onmessagearrived(message: string): Promise<any>;
+
+    onconnectionlost(response: string): Promise<any>;
 }
