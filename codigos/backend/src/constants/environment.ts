@@ -2,7 +2,7 @@ import * as dotenv from 'dotenv'
 
 dotenv.config();
 
-export const enviroment = {
+export const environment = {
 
     SERVER: {
 
@@ -19,8 +19,8 @@ export const enviroment = {
 
     MQTT: {
         
-        HOSTNAME: process.env.MQTT_HOSTNAME || "ws://10.6.1.42",
-        PORT: process.env.MQTT_PORT || "1884",
+        HOSTNAME: process.env.MQTT_HOSTNAME || "10.6.1.42",
+        PORT: process.env.MQTT_PORT || 1884,
         CLIENT_ID: process.env.MQTT_CLIENT_ID || "mqtt-ura"
     }
 }
