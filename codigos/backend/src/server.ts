@@ -1,5 +1,5 @@
 import * as restify from 'restify'
-import { enviroment } from './constants/enviroment';
+import { environment } from './constants/environment';
 import { exit } from 'process';
 
 export default new class Server {
@@ -13,7 +13,7 @@ export default new class Server {
     start(): Promise<Server> {
         return new Promise((resolve, reject) => {
 
-            const { PORT, NAME, VERSION } = enviroment.SERVER
+            const { PORT, NAME, VERSION } = environment.SERVER
 
             this.server = restify.createServer({
                 name: NAME,
