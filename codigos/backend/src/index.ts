@@ -4,6 +4,8 @@ import MqttService from "./services/mqtt.service";
 
 Server.start().then(async => {
     const mqtt = new MqttService();
-    console.log('rodando mqtt');
+    
+
     mqtt.initialize();
+
 }).catch(console.log);
