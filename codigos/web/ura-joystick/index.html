@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ura IOT</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+
+        <div class="image-logo">
+            <img class="logo" src="ura.png" alt="Logo do Projeto Educacional URA">
+        </div>
+        <ul class="control-Buttons">
+            <li class="front"><button class="btns frontb" onclick="move('/frt');">Frente</button></li>
+            <li class="left"><button class="btns leftb" onclick="move('/esq');">Esquerda</button></li>
+            <li class="stop"><button class="btns stopb" onclick="move('/stop');">Parar</button></li>
+            <li class="right"><button class="btns rightb" onclick="move('/drt');">Direita</button></li>
+            <li class="back"><button class="btns backb" onclick="move('/trs');">Trás</button></li>
+        </ul>
+
+        <script>
+          function move(where) {
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET", where, true);
+            xhttp.send();
+          }
+        </script>
+
+        <form id="action" action="/action">
+            <label for="input-text">Digite algo:</label>
+            <input type="text" id="input-text" name="input-text">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <script>
+          $(function() {
+            $("/action").submit(function(event) {
+              
+              var inputData = $("input[name='input-text']").val();
+              var xhttp = new XHMLHttpRequest();
+              
+              xhttp.open("GET", inputData, true);
+              xhttp.send();   
+            });
+          });
+
+        </script>
+
+        <script type="text/javascript" src="scripts/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,152 @@
+
+/* Corpo do Estilo */
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Seção responsável pela Imagem */
+
+.image-logo {
+    position: fixed;
+    top: 2rem;
+    left: 45%;
+}
+
+.logo {
+    width: 8rem;
+    height: 6rem;
+}
+
+/* Retirando o estilo da lista */
+
+ul {
+    list-style: none;
+}
+
+/* Seção responsável pelos botões */
+
+/* Posicionamento */
+
+.control-Buttons {
+    position: fixed;
+    top: 12rem;
+    left: 35.5%;
+    width: 18rem;
+    height: 18rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.front {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.left {
+    grid-column: 0;
+    grid-row: 2;
+}
+
+.stop {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.back {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* Estilo */
+
+.btns {
+    padding: 1em 1.2em;
+    text-align: center;
+    border: none;
+    background-color: #eee;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+a {
+    margin: 0;
+    border: none;
+    text-decoration: none;
+}
+
+.btns:active {
+    background-color: #ccc; 
+}
+
+/* Padronizando o tamanho dos botões */
+
+.frontb {
+    padding: 1em 1.3em;
+}
+
+.stopb {
+    padding: 1em 1.5em;
+}
+
+.backb {
+    padding: 1em 1.75em;
+}
+
+.leftb {
+    padding: 1em .6em;
+}
+
+.rightb {
+    padding: 1em 1.3em;
+}
+
+/* Seção responsável pela entrada manual de comandos */
+
+form {
+    position: fixed;
+    top: calc(100vh - 25vh);
+    left: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label, input, button {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+
+
