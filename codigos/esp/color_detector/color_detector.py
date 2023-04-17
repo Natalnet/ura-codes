@@ -1,6 +1,7 @@
 from machine import Pin, ADC
-
-import time, neopixel
+import time
+import neopixel
+import json
 
 # VARIÁVEIS
 
@@ -8,7 +9,7 @@ lastRead = 0
 readInterval = 1
 
 pin_Neopixel = 23
-num_of_pixel = 8
+num_of_pixels = 8
 
 pin_ldr = 33
 
@@ -19,9 +20,11 @@ maxG = 0
 minB = 0
 maxB = 0
 
+#with open('data.json', 'w') as f:
+
 # COMPONENTES
 
-np = neopixel.NeoPixel(Pin(pin_Neopixel), num_of_pixel)
+np = neopixel.NeoPixel(Pin(pin_Neopixel), num_of_pixels)
 
 ldr = ADC(Pin(pin_ldr))
 ldr.atten(ADC.ATTN_11DB)
@@ -30,7 +33,7 @@ ldr.atten(ADC.ATTN_11DB)
 
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
-BLUE = (0, 0 , 255)
+BLUE = (0, 0, 255)
 WHITE = (255, 255, 255)
 
 # ARRAYS
@@ -40,87 +43,121 @@ green_vals = []
 blue_vals = []
 
 # FUNÇÕES 1- BUSCADOR 2- SINALIZADOR 3,4,5 - ARMAZENAMENTO
-def minor(ldr_val, minV):
-	
-def blinkW(color): 
-    for i in range(3)
+
+def maxmin():
+    with open('data.json', 'r') as f:
+        data = json.load(f)
+    global minR, maxR
+    minR, maxR = min(data[0]), max(data[0])
+    global minG, maxG
+    minG, maxG = min(data[1]), max(data[1])
+    global minB, maxB
+    minB, maxB = min(data[2]), max(data[2])
+    return (minR, maxR), (minG, maxG), (minB, maxB)
+
+
+def blinkW(color):
+    for i in range(3):
         np.fill(color)
-        np.show()
+        np.write()
         time.sleep(1)
         np.fill((0, 0, 0))
-        np.show()
+        np.write()
         time.sleep(1)
+    np.fill((0, 0, 0))
+    np.write()
 
 def calR():
+    global red_vals
     tempo = 10
-    t0 = time.monotonic()
+    t0 = time.time()
     np.fill(WHITE)
-    np.show()
-    while time.monotonic() - t0 < tempo:
+    np.write()
+    with open('data.json', 'r') as f:
+        red_vals = json.load(f)
+    while time.time() - t0 < tempo:
         ldr_val = ldr.read()
-        if(time.time() - lastRead) >= readInterval:
+        if (time.time() - lastRead) >= readInterval:
             print(ldr_val)
             red_vals.append(ldr_val)
-            with open('redval.json', 'w') as f:
-                ujson.dump(red_vals, f)
-    
+            with open('data.json', 'w') as f:
+                json.dump(red_vals, f)
+    np.fill((0, 0, 0))
+    np.write()
 
 def calG():
+    global green_vals
     tempo = 10
-    t0 = time.monotonic()
+    t0 = time.time()
     np.fill(WHITE)
-    np.show()
-    while time.monotonic() - t0 < tempo:
+    np.write()
+    with open('data.json', 'r') as f:
+        green_vals = json.load(f)
+    while time.time() - t0 < tempo:
         ldr_val = ldr.read()
-        if(time.time() - lastRead) >= readInterval:
+        if (time.time() - lastRead) >= readInterval:
             print(ldr_val)
-            red_vals.append(ldr_val)
-            with open('greenval.json', 'w') as f:
-                ujson.dump(red_vals, f)
+            green_vals.append(ldr_val)
+            with open('data.json', 'w') as f:
+                json.dump(green_vals, f)
+    np.fill((0, 0, 0))
+    np.write()
+
 
 def calB():
+    global blue_vals
     tempo = 10
-    t0 = time.monotonic()
+    t0 = time.time()
     np.fill(WHITE)
-    np.show()
-    while time.monotonic() - t0 < tempo:
+    np.write()
+    with open('data.json', 'r') as f:
+        blue_vals = json.load(f)
+    while time.time() - t0 < tempo:
         ldr_val = ldr.read()
-        if(time.time() - lastRead) >= readInterval:
+        if (time.time() - lastRead) >= readInterval:
             print(ldr_val)
-            red_vals.append(ldr_val)
-            with open('blueval.json', 'w') as f:
-                ujson.dump(red_vals, f)
-                
+            blue_vals.append(ldr_val)
+            with open('data.json', 'w') as f:
+                json.dump(blue_vals, f)
+    np.fill((0, 0, 0))
+    np.write()
+
+
 # SETUP? KKKK
 
+
 print("calibração")
-time.sleep(5)
+time.sleep(3)
 blinkW(RED)
+print("calibrando vermelho")
 calR()
-time.sleep(5)
+time.sleep(3)
 blinkW(GREEN)
+print("calibrando verde")
 calG()
-time.sleep(5)
+time.sleep(3)
 blinkW(BLUE)
-time.sleeep(5)
+print("calibrando azul")
+calB()
+minR, maxR, minG, maxG, minB, maxB = maxmin()
+time.sleep(5)
 
 # LOOP
 
 while True:
-    
+
     ldr_val = ldr.read()
-    if(time.time() - lastRead) >= readInterval:
+    if (time.time() - lastRead) >= readInterval:
         print(ldr_val)
         np.fill(WHITE)
-        np.show()
-		
-		if ldr_val >= minR and ldr_val <= maxR:
-			print("Vermelho")
-		elif ldr_val >= minG and ldr_val <= maxG:
-			print("Verde")
-		elif ldr_val >= minB and ldr_val <= maxB:
-			print("verde")
-		else print("Fora do intervalo de leitura")
-        
+        np.write()
+        if ldr_val >= minR and ldr_val <= maxR:
+            print("Vermelho")
+        elif ldr_val >= minG and ldr_val <= maxG:
+            print("Verde")
+        elif ldr_val >= minB and ldr_val <= maxB:
+            print("verde")
+        else: 
+            print("Fora do intervalo de leitura")
+            
         lastRead = time.time()
- 
