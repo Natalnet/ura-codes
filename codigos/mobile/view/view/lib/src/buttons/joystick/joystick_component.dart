@@ -83,11 +83,7 @@ class JoyStick extends StatelessWidget {
           height: innerCircleSize,
           icon: paddButton.buttonIcon,
           iconSize: paddButton.size,
-          onTap: () {
-            debugPrint(
-              " ${[paddButton.index]}",
-            );
-          },
+          onTap: buttons[index].onTap,
         ),
       ),
     );

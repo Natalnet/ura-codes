@@ -9,10 +9,13 @@ class JoyStickItem {
 
   final double size;
 
+  final VoidCallback onTap;
+
   const JoyStickItem({
     required this.size,
     required this.index,
     required this.buttonIcon,
     required this.backgroundColor,
+    required this.onTap,
   });
 }

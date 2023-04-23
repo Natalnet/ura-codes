@@ -13,49 +13,49 @@
 13         to allow setting breakpoints, to provide hot reload, etc.
 14    -->
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:8:6-68
-15-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:8:23-65
+15-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:8:6-68
+15-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:8:23-65
 16    <uses-permission
-16-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:9:6-10:34
+16-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:9:6-10:34
 17        android:name="android.permission.BLUETOOTH"
-17-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:9:23-66
+17-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:9:23-66
 18        android:maxSdkVersion="30" />
-18-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:9:67-93
+18-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:9:67-93
 19    <uses-permission
-19-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:9:6-10:34
+19-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:9:6-10:34
 20        android:name="android.permission.BLUETOOTH"
-20-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:9:23-66
+20-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:9:23-66
 21        android:maxSdkVersion="30" />
-21-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:9:67-93
+21-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:9:67-93
 22    <uses-permission
-22-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:13:6-14:40
+22-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:13:6-14:40
 23        android:name="android.permission.BLUETOOTH_ADMIN"
-23-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:13:23-72
+23-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:13:23-72
 24        android:maxSdkVersion="30" />
-24-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:14:11-37
+24-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:14:11-37
 25    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
-25-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:15:6-74
-25-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:15:23-71
+25-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:15:6-74
+25-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:15:23-71
 26    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
-26-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:16:6-77
-26-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:16:23-74
+26-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:16:6-77
+26-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:16:23-74
 27    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-27-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:17:6-80
-27-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:17:23-77
+27-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:17:6-80
+27-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:17:23-77
 28    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-28-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:18:6-82
-28-->C:\Users\thaua\Desktop\blue_connection\android\app\src\debug\AndroidManifest.xml:18:23-79
+28-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:18:6-82
+28-->C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\android\app\src\debug\AndroidManifest.xml:18:23-79
 29    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-29-->[:flutter_speech] C:\Users\thaua\Desktop\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-71
-29-->[:flutter_speech] C:\Users\thaua\Desktop\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-68
+29-->[:flutter_speech] C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-71
+29-->[:flutter_speech] C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-68
 30
 31    <queries>
-31-->[:flutter_speech] C:\Users\thaua\Desktop\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-15:15
+31-->[:flutter_speech] C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-15:15
 32        <intent>
-32-->[:flutter_speech] C:\Users\thaua\Desktop\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-14:18
+32-->[:flutter_speech] C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-14:18
 33            <action android:name="android.speech.RecognitionService" />
-33-->[:flutter_speech] C:\Users\thaua\Desktop\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-72
-33-->[:flutter_speech] C:\Users\thaua\Desktop\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:13:21-69
+33-->[:flutter_speech] C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-72
+33-->[:flutter_speech] C:\Users\thaua\Desktop\ura-codes\codigos\mobile\blue_connection\build\flutter_speech\intermediates\merged_manifest\debug\AndroidManifest.xml:13:21-69
 34        </intent>
 35    </queries>
 36

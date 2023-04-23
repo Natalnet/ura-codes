@@ -49,24 +49,44 @@ class _VerticalPageState extends State<VerticalPage> {
                 index: 0,
                 backgroundColor: Colors.blue[600]!,
                 buttonIcon: Icons.keyboard_arrow_right_outlined,
+                onTap: () {
+                  debugPrint(
+                    " index 0",
+                  );
+                },
               ),
               JoyStickItem(
                 size: MediaQuery.of(context).size.height * 0.100,
                 index: 1,
                 backgroundColor: Colors.yellow[700]!,
                 buttonIcon: Icons.keyboard_arrow_down_outlined,
+                onTap: () {
+                  debugPrint(
+                    " index 1",
+                  );
+                },
               ),
               JoyStickItem(
                 size: MediaQuery.of(context).size.height * 0.100,
                 index: 2,
                 backgroundColor: Colors.red[600]!,
                 buttonIcon: Icons.keyboard_arrow_left_outlined,
+                onTap: () {
+                  debugPrint(
+                    " index 2",
+                  );
+                },
               ),
               JoyStickItem(
                 size: MediaQuery.of(context).size.height * 0.100,
                 index: 3,
                 backgroundColor: Colors.green[600]!,
                 buttonIcon: Icons.keyboard_arrow_up_outlined,
+                onTap: () {
+                  debugPrint(
+                    " index 3",
+                  );
+                },
               ),
             ],
           ),
