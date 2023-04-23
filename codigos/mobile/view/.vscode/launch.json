@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "example",
+            "request": "launch",
+            "type": "dart",
+            "program": "./view_example/example/lib/main.dart",
+            "args": [
+                "--dart-define=FLUTTER_WEB_USE_SKIA=true"
+            ]
+        },
+    ]
+}

@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:1:1-10:12
+INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:1:1-10:12
+	package
+		ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:2:3-43
+		INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:3:5-71
+	android:name
+		ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:3:22-68
+queries
+ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:5:5-9:15
+intent#action:name:android.speech.RecognitionService
+ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:6:9-8:18
+action#android.speech.RecognitionService
+ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:7:13-72
+	android:name
+		ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml:7:21-69
+uses-sdk
+INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+		ADDED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\thaua\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_speech-2.0.0\android\src\main\AndroidManifest.xml
