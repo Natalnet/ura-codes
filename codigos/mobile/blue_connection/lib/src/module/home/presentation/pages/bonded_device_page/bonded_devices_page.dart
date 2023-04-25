@@ -55,6 +55,7 @@ class _BondedState extends State<BondedDevicePage> {
         bloc: homeBloc,
         builder: (context, state) {
           return homeBloc.bondedDevices.isNotEmpty
+              //TODO: SEPARAR EM UM WIDGET
               ? Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -110,7 +111,7 @@ class _BondedState extends State<BondedDevicePage> {
                       ),
                     ),
                   ],
-                )
+                ) //TODO: SEPARAR EM UM WIDGET
               : Center(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -194,7 +195,7 @@ class _BondedState extends State<BondedDevicePage> {
                 backgroundColor: Colors.indigo[900],
               ),
             );
-            //todo: colocar por rotas
+            //todo: colocar por rotas e module
             Modular.to.push(
               MaterialPageRoute(
                 builder: (context) => ControlPage(
