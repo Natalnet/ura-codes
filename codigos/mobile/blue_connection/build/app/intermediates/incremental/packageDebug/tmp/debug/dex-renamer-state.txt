@@ -1,4 +1,0 @@
-#Sun Apr 23 19:50:15 BRT 2023
-base.0=C\:\\Users\\thaua\\Desktop\\ura-codes\\codigos\\mobile\\blue_connection\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
