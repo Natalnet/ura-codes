@@ -12,4 +12,6 @@ abstract class BluetoothConfigAdapter {
   Future<DeviceStatus> connectDevice(Device device);
 
   Future<DeviceStatus> disconnectDevice(Device device);
+
+  Future<DeviceStatus> reconnectDevice(Device device);
 }

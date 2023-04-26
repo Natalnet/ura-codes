@@ -164,4 +164,9 @@ class BluetoothConfigAdapterImpl implements BluetoothConfigAdapter {
     _devices = [];
     _subscriptionScan.cancel();
   }
+
+  @override
+  Future<DeviceStatus> reconnectDevice(Device device) {
+    throw UnimplementedError();
+  }
 }
