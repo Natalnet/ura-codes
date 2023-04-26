@@ -51,4 +51,10 @@ class BluetoothController {
         .disconnectDevice(device)
         .then((value) => device.status = value);
   }
+
+  Future<void> reconnectDevice({required Device device}) async {
+    if (device.status == DeviceStatus.disconnected || device.status == DeviceStatus.notConnected) {
+      await bluetoothConfig.connectDevice(device).then((value) => device.status == DeviceStatus.connected);
+    }
+  }
 }
