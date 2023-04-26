@@ -166,7 +166,37 @@ class BluetoothConfigAdapterImpl implements BluetoothConfigAdapter {
   }
 
   @override
-  Future<DeviceStatus> reconnectDevice(Device device) {
-    throw UnimplementedError();
+  Future<DeviceStatus> reconnectDevice(Device device) async {
+
+    try {
+
+      late DeviceStatus status;
+
+      BluetoothDevice _deviceLocal = _devices.firstWhere((element) => element.name == device.name);
+
+      status = _deviceLocal.state as DeviceStatus;
+
+      if (status == DeviceStatus.notConnected || status == DeviceStatus.disconnected) {
+        _deviceLocal.connect();
+      }
+
+      _subscriptionConnect = flutterBlue.state.listen((results) {
+
+        if (results == BluetoothState.on) {
+          status = DeviceStatus.connected;
+        } else {
+          status = DeviceStatus.notConnected;
+        }
+      });
+
+      await Future.delayed(const Duration(seconds: 5));
+
+      return status;
+
+    } on PlatformException catch (e) {
+      return DeviceStatus.disconnected;
+    } catch (e) {
+      return DeviceStatus.notConnected;
+    }
   }
 }
