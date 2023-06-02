@@ -2,6 +2,8 @@ import * as mqttv5 from 'paho-mqtt'
 export interface MqttInterface {
 
     initialize(): Promise<void>;
+    
+    onconnect(): Promise<void>;
 
     getClient(): Promise<mqttv5.Client>;
 
