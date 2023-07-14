@@ -6,11 +6,13 @@ function move(where) {
   }
   
   $(function () {
-    
+
     $("#action").submit(function (event) {
+        
       event.preventDefault();
   
       var inputData = $("input[name='input-text']").val(); 
+
       $.ajax({
         type: "POST",
         url: "/action", 
