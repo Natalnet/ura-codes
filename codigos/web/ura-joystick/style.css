@@ -32,6 +32,7 @@
 .left-logo {
   display: flex;
   align-items: center;
+  margin: 30px;
   gap: 20px;
 }
 
