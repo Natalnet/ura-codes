@@ -6,8 +6,6 @@
 }
 
 .main {
-  width: 100vw;
-  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +13,14 @@
 }
 
 .logo {
-  width: 163px;
-  height: 119px;
+  max-width: 100%;
+  height: auto;
   flex-shrink: 0;
 }
 
 .left {
-  width: 50vw;
   height: 100vh;
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,35 +30,35 @@
 .left-logo {
   display: flex;
   align-items: center;
-  margin: 30px;
   gap: 20px;
 }
 
 #action > input {
-  width: 500px;
+  width: 100%;
   height: 56px;
   border: 1px;
   border-radius: 5px;
-  padding: 16px 32px 16px 32px;
-  gap: 10px;
+  padding: 16px 32px;
+  margin-bottom: 10px;
   font-size: 16px;
   box-shadow: 1px 5px 20px 0px #38383826;
   outline: none;
 }
 
 .custom-button {
-  margin-top: 40px;
+  margin-top: 5%;
   margin-left: 55%;
   width: 154px;
   height: 52px;
-  border: 1px solid;
+  border: none;
   border-radius: 7px;
-  padding: 8px 40px 8px 40px;
+  padding: 8px 40px;
   background-color: #478ecb;
-  gap: 10px;
   color: white;
   font-size: 20px;
-  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-button:hover {
@@ -68,11 +66,6 @@
 }
 
 .left-logo > h1 {
-  width: 469px;
-  height: 138px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
   font-size: 60px;
   font-weight: bold;
   line-height: 70px;
@@ -88,16 +81,15 @@
 
 .name-comando {
   display: flex;
-  width: 540px;
-  height: 66px;
   flex-direction: column;
   justify-content: center;
-  flex-shrink: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .right {
+  height: 100vh;
   width: 50vw;
-  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,19 +97,15 @@
 }
 
 .right > h1 {
-  font-size: 62px;
+  font-size: 64px;
   font-weight: bold;
 }
 
-.imagecontrol {
-  width: 151.495px;
-  height: 152.758px;
-  flex-shrink: 0;
-}
-
-.line {
+.line,
+.linediv {
   width: 1px;
-  height: 720px;
+  height: 100%;
+  margin-right: 1px;
 }
 
 .icons {
@@ -125,6 +113,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 1px;
 }
 
 .icons-top {
@@ -132,7 +121,15 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  height: 108px;
+  margin: 12px;
+}
+
+.icons-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 108px;
 }
 
 .icons-botton {
@@ -140,12 +137,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.icons-image {
-  width: 150.495px;
-  height: 155.758px;
-  flex-shrink: 0;
+  height: 108px;
+  margin: 12px;
 }
 
 .btns-frontb,
@@ -159,6 +152,12 @@
   border: none;
   outline: none;
   background: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
 }
 
 .btns-frontb:active,
@@ -166,147 +165,102 @@
 .btns-rightb:active,
 .btns-backb:active,
 .btns-stopb:active {
-    transform: translateY(-5px);
+  transform: translateY(-2px);
+}
+
+.icons-image {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 950px) {
   .main {
     flex-direction: column;
-    width: 80vw;
   }
 
   .left {
-    width: 50vw;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
   }
 
   .left-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 
-  .left > input {
-    width: 80vw;
-    max-width: 600px;
-    align-items: center;
-  }
-
   .buttondiv {
-    margin-top: 20px;
-    margin-left: 0;
-    align-items: center;
+    flex-direction: column;
   }
 
-  .custom-button {
-    width: 70vw;
-  }
-
-  .left-logo > h1 {
-    width: 80vw;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-  }
-
-  .name-comando {
-    width: 50vw;
-    align-items: center;
-  }
-
-  .right {
-    width: 50vw;
+  .icons-center,
+  .icons-botton,
+  .icons-tops {
     display: flex;
-    margin-top: 0;
-    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .right > h1 {
-    font-size: 40px;
-    text-align: center;
+  .line,
+  .linediv {
+    display: none;
   }
 
-  .line {
-    width: 100%;
-    height: 1px;
-  }
-
-  .icons {
-    width: 60vw;
-    height: 60vh;
+  .btns-frontb,
+  .btns-leftb,
+  .btns-rightb,
+  .btns-backb,
+  .btns-stopb {
+    width: auto;
   }
 }
 
 @media (max-width: 600px) {
   .main {
     flex-direction: column;
-    width: 80vw;
   }
 
   .left {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    height: auto;
   }
 
   .left-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
   }
 
-  .left > input {
-    width: 80vw;
-    max-width: 600px;
-    align-items: center;
-  }
-
-  .buttondiv {
-    margin-top: 20px;
-    margin-left: 0;
-    align-items: center;
-  }
-
-  .custom-button {
-    width: 70vw;
-  }
-
-  .left-logo > h1 {
-    width: 70vw;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-  }
-
-  .name-comando {
-    width: 90vw;
-    align-items: center;
-  }
-
   .right {
-    width: 50vw;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .icons,
+  .icons-center,
+  .icons-botton,
+  .icons-tops {
     display: flex;
-    margin-top: 0;
-    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .line,
+  .linediv {
+    display: none;
   }
 
   .right > h1 {
-    font-size: 40px;
-    text-align: center;
+    font-size: 50px;
   }
 
-  .line {
-    width: 100%;
-    height: 1px;
+  .icons{
+    height: 240px;
+    width: 100vw;
   }
-
-  .icons {
-    width: 50%;
-    height: 50%;
+  .icons-top {
+    height: 80px;
+  }
+  
+  .icons-center {
+    height: 80px;
+  }
+  
+  .icons-botton {
+    height: 80px;
   }
 }
