@@ -158,7 +158,14 @@
   border: none;
   outline: none;
   background: none;
+}
 
+.btns-frontb:active,
+.btns-leftb:active,
+.btns-rightb:active,
+.btns-backb:active,
+.btns-stopb:active {
+    transform: translateY(-5px);
 }
 
 @media (max-width: 950px) {
